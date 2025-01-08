@@ -154,4 +154,4 @@ if __name__ == "__main__":
     result = cast(ResultDict, manager.dict())
     tasks = cast(TasksDict, manager.dict())
     lock = manager.Lock()
-    app.run(debug=True)
+    app.run(debug=False, host="0.0.0.0", port=8080)
